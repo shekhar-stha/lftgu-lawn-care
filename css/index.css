@@ -284,13 +284,13 @@ nav .navbar-nav .nav-link:hover {
   }
 }
 
-.nav-hero .hero .hero-info,
+.nav-hero .hero ,
 .nav-hero .inner-hero .hero-info {
   width: 85%;
   margin: 0 auto;
   font-size: var(--hero-paragraph-font-size);
   color: var(--hero-paragraph-color);
-  font-weight: 500;
+  font-weight: 200;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
