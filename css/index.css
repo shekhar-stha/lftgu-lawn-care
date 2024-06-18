@@ -1869,3 +1869,107 @@ hr {
   border-top: var(--bs-border-width) solid;
   opacity: 0.25;
 }
+
+.two-col-info {
+  overflow: visible !important;
+}
+.two-col-info .flex {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 992px) {
+  .two-col-info .flex {
+    flex-direction: column;
+    row-gap: 4.5rem;
+  }
+}
+.two-col-info .flex .info-div {
+  flex: 1;
+  width: 45%;
+  flex: 1;
+}
+@media (max-width: 992px) {
+  .two-col-info .flex .info-div {
+    width: 100%;
+    flex: inherit;
+  }
+}
+.two-col-info .flex .info-div .title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.two-col-info .flex .info-div p {
+  font-size: 18px;
+}
+.two-col-info .flex .info-div ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+@media (max-width: 430px) {
+  .two-col-info .flex .info-div ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.two-col-info .flex .info-div li::before {
+  content: "\f058";
+  color: green;
+  font-size: 1.4rem;
+  font-family: "Font Awesome 5 Free";
+  padding: 0 6px 0 0;
+}
+.two-col-info .flex .img-div {
+  width: 45%;
+  flex: 1;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .two-col-info .flex .img-div {
+    width: 100%;
+  }
+}
+.two-col-info .flex .img-div video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.two-col-info .flex .img-div .main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.two-col-info .flex .img-div .add-on-info {
+  background-color: #fcfef7;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  z-index: 2;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.two-col-info .flex .img-div .add-on-info .big-text {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #00ff22;
+}
+.two-col-info .flex .img-div .add-on-info .small-text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.two-col-info .flex .img-div .add-on-info .medium-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
