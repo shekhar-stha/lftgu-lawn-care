@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Color Set */
 :root {
-  --primary: #04b104;
+  --primary: #11af2c;
   --secondary: green;
   --warning: rgb(212, 36, 4);
   --success: rgb(236, 241, 233);
@@ -28,7 +28,7 @@
   --ahref-hover-color: var(--primary);
 
   /* Used for text */
-  --bs-primary-rgb: 4, 177, 4;
+  --bs-primary-rgb: 17, 175, 44;
   --bs-secondary-rgb: 218, 204, 12;
   --bs-success-rgb: 70, 178, 18;
   --bs-info-rgb: 128, 128, 128;
@@ -59,7 +59,7 @@
   --hero-font-weight: 600;
   --hero-highlighted-text: var(--white);
   --hero-highlighted-text-font-weight: 700;
-  --hero-paragraph-font-size: 24px;
+  --hero-paragraph-font-size: 20px;
   --hero-paragraph-color: var(--white);
   --hero-primary-button: var(--primary);
   --hero-primary-button-text: var(--white);
@@ -345,18 +345,13 @@ nav {
     rgba(18, 94, 18, 1) 100%
   ); */
 
-  background: rgb(218, 204, 12);
-  background: linear-gradient(
-    180deg,
-    rgba(218, 204, 12, 1) 0%,
-    rgba(4, 177, 4, 1) 31%
-  );
+  background: linear-gradient(180deg, rgba(8,120,27,1) 0%, rgba(17,175,44,1) 100%);
 }
 
 @media (max-width: 1200px) {
   nav {
     background: none;
-    background-color: var(--white);
+    background-color: var(--primary);
   }
 }
 
